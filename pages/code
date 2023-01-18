@@ -1,0 +1,9 @@
+ <?php $Total = "SELECT SUM(Price) as Total FROM Product JOIN cart  WHERE Id=Id_product  AND Id_client=$client_id;";
+            $execut_T = mysqli_query($con, $Total);
+            $check_Price = mysqli_num_rows($execut_T);
+            $fetch_total = mysqli_fetch_assoc($execut_T);
+            $price = $fetch_total["Total"];
+            $tax = 10;
+            $total_price = $price + ($price * $tax);
+
+?>
