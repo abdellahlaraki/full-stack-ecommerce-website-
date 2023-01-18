@@ -1,6 +1,6 @@
 # source code Ecommerce website  using php mysqli
 
-technologie :
+technologies :
  - php 
  - mysqli / MariaDB
  - javascript 
